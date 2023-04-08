@@ -3,7 +3,9 @@ const { Schema } = mongoose;
 const UserSchema = new Schema({
     avatar: {
         type: String,
-        required: false
+        required: false,
+        // default:
+        // "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg",
     },
     firstname:{
         type:String,
@@ -21,12 +23,22 @@ const UserSchema = new Schema({
     phone:{
         type:String,
         required:false,
-        unique:true
     },
    password:{
         type:String,
-        required:true
+        required:true,
+        
     },
+    about:{
+        type:String,
+        required:false,
+    },
+    interest:[{
+        type: String
+    }],
+    
+    education:[{question1:String, question2:String}],
+    mediaLink:[{linkedin:String,github:String,twitter:String,instagram:String,website:String,facebook:String}],
    date:{
         type:Date,
         default:Date.now
