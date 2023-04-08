@@ -2,7 +2,7 @@ const User = require("../models/User");
 const {validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const JWT_SECRET="sECUREKEY";
+const JWT_SECRET=`${process.env.REACT_APP_JWT_SECRET}`;
 const fs = require('fs');
 const DIR = './';
 

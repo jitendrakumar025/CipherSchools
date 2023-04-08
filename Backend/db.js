@@ -1,7 +1,5 @@
 const mongoose=require("mongoose");
-// const mongoURI="mongodb://localhost:27017/chipherschools"
-const mongoURI="mongodb+srv://root:root022@clustercipher.o1wz3kb.mongodb.net/user"
-// const mongoURI="mongodb+srv://root:root022@cluster0.rq55vdi.mongodb.net/inotebook"
+const mongoURI=`${process.env.REACT_APP_MONGO_URI}`;
 const connectToMongo= ()=>{
     try {
          mongoose.set('strictQuery', false);
