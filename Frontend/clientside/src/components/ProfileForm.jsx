@@ -34,13 +34,13 @@ export const ProfileForm = () => {
         <FormControl defaultValue="" sx={{ width: "200%" }} required>
           <Box mb="1rem">
             <Typography variant="h5">First Name</Typography>
-            <Box display="flex" justifyContent="space-between" backgroundColor={colors.grey[900]}>
+            <Box display="flex" justifyContent="space-between" backgroundColor={colors.gray[900]}>
               <Input placeholder="Your First Name" sx={{ width: "100%" }} />
             </Box>
           </Box>
           <Box mb="1rem">
             <Typography variant="h5"> Last Name</Typography>
-            <Box display="flex" justifyContent="space-between" backgroundColor={colors.grey[900]}>
+            <Box display="flex" justifyContent="space-between" backgroundColor={colors.gray[900]}>
               <Input sx={{ width: "100%" }} />
             </Box>
           </Box>
@@ -49,7 +49,7 @@ export const ProfileForm = () => {
             <Box
               display="flex"
               justifyContent="space-between"
-              backgroundColor={colors.grey[900]}
+              backgroundColor={colors.gray[900]}
             >
               <Input sx={{ width: "100%" }} />
             </Box>
@@ -59,7 +59,7 @@ export const ProfileForm = () => {
             <Box
               display="flex"
               justifyContent="space-between"
-              backgroundColor={colors.grey[900]}
+              backgroundColor={colors.gray[900]}
             >
               <Input sx={{ width: "100%" }} />
             </Box>

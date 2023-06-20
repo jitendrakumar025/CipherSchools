@@ -1,9 +1,19 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+body::-webkit-scrollbar-thumb {
+  background: #dfe0e1;
+  border-radius: 1rem;
+}
 .nav-link-left{
   margin-left: 25px;
   cursor: pointer;
 }
 .navBox{
-  background-color: #262c36;
+   /* background-color: #262c36; */
     border-bottom: 1px solid hsl(0deg 0% 100% / 10%);
     height: 60px;
     position: fixed;
@@ -11,15 +21,15 @@
     -webkit-user-select: none;
     user-select: none;
     width: 100%;
-    z-index: 1001;
+    z-index:2000;
 }
 .nav-right{
   align-items: center;
     display: flex;
-    gap: 25px;
+    gap: 75px;
     justify-content: space-between;
     padding-right: 40px;
-    z-index: 2;
+     z-index: 2; 
 }
 .top-right{
   display: flex;
@@ -27,7 +37,7 @@
   align-items: center;
 }
 .top-right img{
-  background-color: whitesmoke;
+    background-color: whitesmoke;
     border-radius: 100%;
     height: 18px;
     margin: 0 3px;
@@ -48,25 +58,33 @@ color: #f3912e;
     min-height: 100vh;
 }
 .content_top{
-  padding-top: 61px;
+  padding-top: 60px;
 }
 .userbox{
-    background: #202b47;
-    height: 110px;
+    /* background-color: #15181e; */
+    height: 108px;
     /* padding-right: 67px; */
     position: fixed;
     width: 100%;
     z-index: 99!important;
 }
+/* .profile{
+  margin-left: 7.5rem;
+} */
 .prcontent{
     align-items: center;
-    background: linear-gradient(to right,#262c36,transparent,#262c36);
-    border-bottom: 1px solid hsl(0deg 0% 100% / 10%);
+    border-bottom: 1px solid rgba(10,30,50,.1);;
     display: flex;
     gap: 1rem;
     height: 100%;
     justify-content: flex-start;
-    padding: 5px 40px;
+    padding: 0px 6rem;
+}
+.prBox{
+  background: url("../public/assets/ProfileCover.png") !important;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
   .app{
     display: flex;
@@ -112,17 +130,17 @@ color: #f3912e;
     display: flex;
     height: 100%;
     padding-left: 50px;
-    width: 100%;
+    /* width: 100%; */
 }
 .dashcontent{
     display: flex;
     flex-direction: column;
     height: auto;
-    /* width: 100%; */
+    width: 75%;
 }
 .dashbox{
-  background-color: initial;
-  padding-left: 0;
+  background-color: #15181e;
+  padding-left: 4rem;
   padding-top: 140px;
 }
 .about_top,.weblinks_top,.professionbox_top,.Passbox_top,.interestbox_top{
@@ -152,9 +170,10 @@ color: #f3912e;
     overflow-x: hidden;
     overflow-y: auto;
     padding: 0.75rem;
+    
 }
 .underline{
-  background: rgb(10 30 50 / 10%);
+  background: rgba(165, 175, 185, 0.1);
   border-radius: 0.5px;
   height: 1px;
   margin: 1.5rem 0 1rem;
@@ -211,4 +230,41 @@ color: #f3912e;
     flex-direction: column;
     background-color: #fff;
 
+}
+
+.react-calendar-heatmap .color-empty {
+  fill: #262c36 !important;
+}
+
+.rside{
+  margin-top: 120px;
+  height: 100%;
+  position: fixed;
+  /* z-index: 1; */
+  right : 0;
+}
+.collapseBtn{
+    align-items: center;
+    /* border-radius: 5px; */
+    /* background-color: #15181e!important; */
+    
+    cursor: pointer;
+    display: flex;
+    /* height: 20px !important; */
+    /* padding: 0 !important; */
+    justify-content: center;
+    /* margin-left: -29px !important; */
+    position: fixed;
+    /* margin-top: .5rem !important; */
+    width: 3px !important;
+}
+.jss22 {
+  width: 67px;
+  padding: 0 3px;
+  z-index: 98;
+  /* background: var(--background); */
+  margin-top: 170px;
+  overflow-x: hidden;
+  transition: width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+  border-left: 1px solid var(--border-color);
 }

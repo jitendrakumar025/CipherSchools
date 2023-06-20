@@ -45,7 +45,7 @@ export default function MultipleSelectPlaceholder(props) {
 
   return (
     <div>
-      <FormControl sx={{ m: 1, width: "100%", mt: 3 ,backgroundColor:`${colors.primary[400]}`}}>
+      <FormControl sx={{ m: 1, width: "100%", mt: 3 ,backgroundColor:`${colors.black[500]}`}}>
         <Select
           
           multiple
